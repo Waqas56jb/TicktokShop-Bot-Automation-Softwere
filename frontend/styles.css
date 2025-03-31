@@ -1,0 +1,220 @@
+/* ========= Reset ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #0c1c0f;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* ========= Container ========= */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========= Header ========= */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(12, 28, 15, 0.95);
+    padding: 1rem 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #9cf0b0;
+    /* Accent color */
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li {
+    margin: 0 1rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #9cf0b0;
+}
+
+.header-buttons a {
+    margin-left: 1rem;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn.signup {
+    background: #9cf0b0;
+    color: #0c1c0f;
+    font-weight: 600;
+}
+
+.btn.signup:hover {
+    background: #83d598;
+}
+
+.btn.login {
+    border: 2px solid #9cf0b0;
+    color: #9cf0b0;
+}
+
+.btn.login:hover {
+    background: #9cf0b0;
+    color: #0c1c0f;
+}
+
+/* ========= Hero Section ========= */
+.hero {
+    height: 100vh;
+    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px;
+    /* Space for header */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(12, 28, 15, 0.7);
+}
+
+.hero-container {
+    position: relative;
+    text-align: left;
+    max-width: 800px;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-text .accent {
+    color: #9cf0b0;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #d3d3d3;
+}
+
+.cta-buttons a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn.primary {
+    background: #9cf0b0;
+    color: #0c1c0f;
+    border: 2px solid #9cf0b0;
+}
+
+.btn.primary:hover {
+    background: #83d598;
+    border-color: #83d598;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #9cf0b0;
+}
+
+.btn.secondary:hover {
+    background: #9cf0b0;
+    color: #0c1c0f;
+}
+
+/* ========= Footer ========= */
+.site-footer {
+    background: #0c1c0f;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2rem;
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+}
+
+/* ========= Responsive ========= */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        margin-top: 0.5rem;
+    }
+
+    .main-nav li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}

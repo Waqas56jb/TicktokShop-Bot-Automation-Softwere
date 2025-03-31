@@ -1,0 +1,29 @@
+├── 📂 backend (Node.js backend & Selenium bot)
+│ ├── 📜 server.js → Main backend server
+│ ├── 📜 scraper.js → Selenium bot for automation
+│ ├── 📜 api.js → TikTok Shop API integration
+│ ├── 📜 config.js → API keys, URLs, credentials
+│ ├── 📜 package.json → Dependencies
+│ ├── 📜 package-lock.json → Dependency lock file
+│ ├── 📜 .env → Environment variables (secrets)
+│ ├── 📂 logs/ → Log files for debugging
+│ │ ├── 📜 error.log → Errors & crash logs
+│ │ ├── 📜 access.log → API request logs
+│ ├── 📂 utils/ → Helper functions (optional)
+│ │ ├── 📜 helpers.js → Reusable functions
+
+├── 📂 frontend (Website UI to control bot)
+│ ├── 📜 index.html → Frontend UI
+│ ├── 📜 style.css → Styling
+│ ├── 📜 script.js → JavaScript to interact with backend
+│ ├── 📂 assets/ → Static assets like images, videos, and logos
+│ │ ├── 📂 images/ → Store UI images & logos
+│ │ │ ├── 📜 logo.png → Website logo
+│ │ │ ├── 📜 background.jpg → UI background
+│ │ ├── 📂 videos/ → Store TikTok Shop video previews
+│ │ │ ├── 📜 sample.mp4 → Example video
+│ │ ├── 📂 icons/ → UI icons for buttons and features
+│ │ │ ├── 📜 bot-icon.svg → Bot-related icon
+ 
+
+gve me fle stucture commdn to create these folders only
